@@ -18,6 +18,10 @@ class Engine:
     def next_turn(self):
         self.next_player = 'white' if self.next_player == 'black' else 'black'
 
+    def valid_move(self, piece, move):
+        return self.board.valid_move(piece, move)
+
+
     def move(self, piece, move):
         if not self.game_active: return
         self.board.move(piece, move)

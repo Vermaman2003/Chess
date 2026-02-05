@@ -1,8 +1,8 @@
 import pygame
 import os
 
-from sound import Sound
-from theme import Theme
+from .sound import Sound
+from .theme import Theme
 
 class Config:
 
